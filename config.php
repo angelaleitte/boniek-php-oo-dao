@@ -1,6 +1,6 @@
 <?php
 $db_name = 'nome do banco';
-$db_host = 'endereço do banco';
+$db_host = 'endereco do banco';
 $db_user = 'usuario';
 $db_pass = 'senha';
 
