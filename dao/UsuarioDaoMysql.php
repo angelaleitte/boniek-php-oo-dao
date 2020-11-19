@@ -13,7 +13,8 @@ class UsuarioDaoMysql implements UsuarioDAO {
         $sql->bindValue(':nome', $u->getNome());
         $sql->bindValue(':email', $u->getEmail());
         $sql->execute();
-
+        
+        //lastInsertId - metodo nativo do pdo que traz o ultimo id adicionado
         $u->setId( $this->pdo->lastInsertId() );
         return $u;
     }
